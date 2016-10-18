@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +9,18 @@ namespace ImageGridTest
 {
 	public class App : Application
 	{
-		public App ()
+
+        internal static double DisplayScreenWidth;
+        internal static double DisplayScreenHeight;
+        internal static double DisplayScaleFactor;
+
+
+        public App ()
 		{
 			// The root page of your application
-			MainPage = new GridPage();
-		
+            var TabPage = new TabbedPage();
+            TabPage.Children.Add(new GridPage());
+		    MainPage = TabPage;              		
 		}
 
 		protected override void OnStart ()

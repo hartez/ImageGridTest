@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using Android.App;
 using Android.Content.PM;
@@ -16,7 +16,14 @@ namespace ImageGridTest.Droid
 		{
 			base.OnCreate (bundle);
 
-			global::Xamarin.Forms.Forms.Init (this, bundle);
+            // Store off the device sizes, so we can access them within Xamarin Forms
+            App.DisplayScreenWidth = (double)Resources.DisplayMetrics.WidthPixels / (double)Resources.DisplayMetrics.Density; // Width = WidthPixels / Density
+            App.DisplayScreenHeight = (double)Resources.DisplayMetrics.HeightPixels / (double)Resources.DisplayMetrics.Density; // Height = HeightPixels / Density
+            App.DisplayScaleFactor = (double)Resources.DisplayMetrics.Density;
+
+
+
+            global::Xamarin.Forms.Forms.Init (this, bundle);
 			LoadApplication (new ImageGridTest.App ());
 		}
 	}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:JistTV;assembly=JistTV" xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" x:Class="ImageGridTest.GridPage" Title="Grid" BackgroundColor="Black">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" WinPhone="20,20,20,20" />
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		
+		<ScrollView Orientation="Vertical">
+
+			
+
+			<Grid x:Name="myGrid" ColumnSpacing="3" RowSpacing="3" Padding="3,0,3,0"> 
+
+				<!--
+				Padding = Thickness (Double left, Double top, Double right, Double bottom)
+				- https://developer.xamarin.com/api/constructor/Xamarin.Forms.Thickness.Thickness/p/System.Double/System.Double/System.Double/System.Double/
+
+				Xamarin Forms - Grids
+				- https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/grid/
+
+				Optimizing App Performance with Xamarin.Forms
+				– https://www.youtube.com/watch?v=RZvdql3Ev0E
+
+				
+				Screenshots of app 
+				- Android - https://cloud.githubusercontent.com/assets/8008527/19247514/8ecb21fa-8ef9-11e6-9ad3-89587b53f24a.png
+				- iOS - https://cloud.githubusercontent.com/assets/8008527/19247536/ab30582e-8ef9-11e6-9a30-854425eefe71.png
+				
+				-->
+
+
+				<!--Rows ===================================================-->
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+
+				<!--Columns ================================================-->
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1" /> <!--Width will be adjusted during runtime-->
+					<ColumnDefinition Width="1" /> <!--Width will be adjusted during runtime-->
+				</Grid.ColumnDefinitions>
+
+				<!-- Row 0 =================================================-->
+				<Image Aspect="AspectFit" Grid.Row="0" Grid.Column="0" Source="green.jpg"/>
+				<Image Aspect="AspectFit" Grid.Row="0" Grid.Column="1" Source="blue.jpg"/>
+
+				<!-- Row 1 =================================================-->
+				<Image Aspect="AspectFit" Grid.Row="1" Grid.Column="0" Source="red.jpg"/>
+				<Image Aspect="AspectFit" Grid.Row="1" Grid.Column="1" Source="purple.jpg"/>
+
+				<!-- Row 2 =================================================-->
+				<Image Aspect="AspectFit" Grid.Row="2" Grid.Column="0" Source="brown.jpg"/>
+				<Image Aspect="AspectFit" Grid.Row="2" Grid.Column="1" Source="yellow.jpg"/>
+
+
+				
+			</Grid>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:JistTV;assembly=JistTV"
@@ -18,14 +18,11 @@
 
 
 
-      <Grid  ColumnSpacing="5" RowSpacing="2" >
+      <Grid  x:Name="ImageGrid" ColumnSpacing="3" RowSpacing="2" Padding="3,0,3,0">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="5"/>
-          <ColumnDefinition Width="*"/>
-          <ColumnDefinition Width="0"/>
-          <ColumnDefinition Width="*"/>
           <ColumnDefinition Width="5"/>
-        </Grid.ColumnDefinitions>
+       </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto"/>
@@ -34,12 +31,12 @@
 
         </Grid.RowDefinitions>
 
-        <Image Source="red.jpg"  Aspect="AspectFit" Grid.Column="1" Grid.Row="0"/>
-        <Image Source="blue.jpg" Aspect="AspectFit" Grid.Column="3" Grid.Row="0"  />
-        <Image Source="green.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="1" />
-        <Image Source="brown.jpg" Aspect="AspectFit" Grid.Column="3" Grid.Row="1" />
-        <Image Source="purple.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="2"  />
-        <Image Source="yellow.jpg" Aspect="AspectFit" Grid.Column="3" Grid.Row="2"  />
+        <ffimage:CachedImage Source="red.jpg"  Aspect="AspectFit" Grid.Column="0" Grid.Row="0"/>
+        <ffimage:CachedImage Source="blue.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="0"  />
+        <ffimage:CachedImage Source="green.jpg" Aspect="AspectFit" Grid.Column="0" Grid.Row="1" />
+        <ffimage:CachedImage Source="brown.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="1" />
+        <ffimage:CachedImage Source="purple.jpg" Aspect="AspectFit" Grid.Column="0" Grid.Row="2"  />
+        <ffimage:CachedImage Source="yellow.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="2"  />
 
       </Grid>
     </ScrollView>
