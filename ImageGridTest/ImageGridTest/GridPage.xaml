@@ -20,23 +20,23 @@
 
       <Grid  x:Name="ImageGrid" ColumnSpacing="3" RowSpacing="2" Padding="3,0,3,0">
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="5"/>
-          <ColumnDefinition Width="5"/>
+          <ColumnDefinition Width="18*"/>
+          <ColumnDefinition Width="18*"/>
        </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-          <RowDefinition Height="Auto"/>
-          <RowDefinition Height="Auto"/>
-          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="25*"/>
+          <RowDefinition Height="25*"/>
+          <RowDefinition Height="25*"/>
 
         </Grid.RowDefinitions>
 
-        <ffimage:CachedImage Source="red.jpg"  Aspect="AspectFit" Grid.Column="0" Grid.Row="0"/>
-        <ffimage:CachedImage Source="blue.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="0"  />
-        <ffimage:CachedImage Source="green.jpg" Aspect="AspectFit" Grid.Column="0" Grid.Row="1" />
-        <ffimage:CachedImage Source="brown.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="1" />
-        <ffimage:CachedImage Source="purple.jpg" Aspect="AspectFit" Grid.Column="0" Grid.Row="2"  />
-        <ffimage:CachedImage Source="yellow.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="2"  />
+        <Image Source="red.jpg"  Aspect="AspectFit" Grid.Column="0" Grid.Row="0"/>
+        <Image Source="blue.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="0"  />
+        <Image Source="green.jpg" Aspect="AspectFit" Grid.Column="0" Grid.Row="1" />
+        <Image Source="brown.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="1" />
+        <Image Source="purple.jpg" Aspect="AspectFit" Grid.Column="0" Grid.Row="2"  />
+        <Image Source="yellow.jpg" Aspect="AspectFit" Grid.Column="1" Grid.Row="2"  />
 
       </Grid>
     </ScrollView>
