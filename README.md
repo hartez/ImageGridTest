@@ -1,3 +1,3 @@
 # ImageGridTest
 
-[Test](kidsaudio://blub)
+<a href="myapp://" />
