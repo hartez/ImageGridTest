@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:JistTV;assembly=JistTV"
-             xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="ImageGridTest.GridPage"
              
              Title="Grid" BackgroundColor="Black">
@@ -16,18 +14,16 @@
 
     <ScrollView Orientation="Vertical">
 
-
-
       <Grid  x:Name="ImageGrid" ColumnSpacing="3" RowSpacing="2" Padding="3,0,3,0">
         <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="18*"/>
-          <ColumnDefinition Width="18*"/>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="*"/>
        </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-          <RowDefinition Height="25*"/>
-          <RowDefinition Height="25*"/>
-          <RowDefinition Height="25*"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
 
         </Grid.RowDefinitions>
 
